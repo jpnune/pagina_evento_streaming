@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -8,6 +10,8 @@ module.exports = function(grunt) {
         // Compila SASS para CSS
         sass: {
             options: {
+                implementation: sass,
+                sourceMap: true,
                 style: 'compressed'
             },
             dist: {
@@ -85,7 +89,7 @@ module.exports = function(grunt) {
     });
 
     // Carrega plugins
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
