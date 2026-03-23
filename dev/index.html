@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento CS+ | O Futuro da Ciência da Computação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- O Grunt irá compilar o SASS para este caminho no dist -->
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="header__brand">CS<span>+</span></a>
+            <a href="#subscribe" class="button button--primary button--header">Me Avise</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="hero__badge">EM BREVE</span>
+                <div id="countdown" class="countdown countdown--hero">
+                    <div class="countdown__block">
+                        <span id="days" class="countdown__time">00</span>
+                        <label class="countdown__label">Dias</label>
+                    </div>
+                    <div class="countdown__block">
+                        <span id="hours" class="countdown__time">00</span>
+                        <label class="countdown__label">Horas</label>
+                    </div>
+                    <div class="countdown__block">
+                        <span id="minutes" class="countdown__time">00</span>
+                        <label class="countdown__label">Min</label>
+                    </div>
+                    <div class="countdown__block">
+                        <span id="seconds" class="countdown__time">00</span>
+                        <label class="countdown__label">Seg</label>
+                    </div>
+                </div>
+                <h1 class="title title--main">O Próximo Nível do Seu <span class="title--highlight">Conhecimento</span>
+                    Começa Aqui</h1>
+                <p class="hero__subtitle">Descubra a plataforma definitiva para dominar Ciência da Computação com a
+                    estética e fluidez que você merece.</p>
+                <div class="hero__actions">
+                    <a href="#about" class="button button--outline">Saiba Mais</a>
+                    <a href="#subscribe" class="button button--glow">Garantir Acesso Antecipado</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="features">
+            <div class="container">
+                <h2 class="title title--section">O que esperar do CS+</h2>
+                <div class="features__grid">
+                    <div class="features__card">
+                        <img src="src/images/advanced-cs.png" alt="Advanced CS" class="features__img">
+                        <h3 class="features__card-title">Conteúdo Premium</h3>
+                        <p>Aulas selecionadas e organizadas por especialistas para acelerar seu aprendizado.</p>
+                    </div>
+                    <div class="features__card">
+                        <img src="src/images/data-structures.png" alt="Data Structures" class="features__img">
+                        <h3 class="features__card-title">Roadmaps Estruturados</h3>
+                        <p>Não se perca no mar de informações. Siga um caminho claro do básico ao avançado.</p>
+                    </div>
+                    <div class="features__card">
+                        <img src="src/images/system-design.png" alt="System Design" class="features__img">
+                        <h3 class="features__card-title">Experiência Imersiva</h3>
+                        <p>Interface inspirada nos melhores serviços de streaming do mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="newsletter">
+            <div class="container">
+                <div class="newsletter__content">
+                    <h2 class="title title--section">Não perca a grande estreia</h2>
+                    <p>Cadastre seu e-mail para receber um convite exclusivo e bônus de lançamento.</p>
+                    <p class="newsletter__hint">Escreva no campo e-mail: <strong>cienciadacomputação@email.com</strong>
+                        para verificar a página do projeto de streaming</p>
+                    <form class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="Seu melhor e-mail" required>
+                        <a href="https://github.com/jpnune/ciencia-da-computacao" class="button button--primary">Inscrever-se</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CS+ Project. Inspirado no Roadmap.sh e EBAC.</p>
+        </div>
+    </footer>
+
+    <script src="src/scripts/countdown.js"></script>
+</body>
+
+</html>
